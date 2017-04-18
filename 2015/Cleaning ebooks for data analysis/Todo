@@ -1,0 +1,25 @@
+
+Finish writing extractHeader.py...
+
+
+1. split ebooks with csplit on "*** End of Book"
+
+1.5 Strip starting text before Title, strip bounding text after """End...
+
+$ sed '1,/Linux/d' file
+
+2. Extract Header, use Head, then grep title, Author, etc. 
+Pass on the body, minus the header and "*** Start of..."
+"
+
+pass on book id. 
+
+3. tr split words into lines, output to tokens.csv with tee
+
+4. Sort words, uniq to get word ocurrences, add words and word counts to token_counts.csv
+
+5. Grep token_counts.csv (or output buffer) for every name in popular names, and add to name_counts.csv. 
+
+6. 
+
+
