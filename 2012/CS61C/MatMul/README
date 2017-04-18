@@ -1,0 +1,3 @@
+Optimized matrix-multiplication in C, SIMD(Assembly), and OpenMP (parallel programming language extension)
+
+Run "make" and then "./testing.sh"

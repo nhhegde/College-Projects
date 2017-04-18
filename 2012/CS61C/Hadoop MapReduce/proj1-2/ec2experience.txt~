@@ -1,0 +1,81 @@
+1.
+
+("jurisdiction", 0)
+
+2.8852518461248065      maclay
+0.9091565569902544      judge
+0.8552883307612996      casino
+0.6629844800719538      viders
+0.5682724114902461      lsuc
+0.5566711137666123      _land_
+0.40736194946396326     sovereignty
+0.39339539961966885     allegiance
+0.24853182143388883     namo
+0.2474365956349238      person
+0.22341887017385448     mexico
+0.2220164346592863      subhierarchy
+0.20275409712428147     forfeiture
+0.19671416428558106     commemorations
+0.18039794246448185     exercising
+0.1763534067519808      and
+0.17180573884353792     property
+0.17024282874217464     supercedes
+0.1490169028665911      parental
+0.14618467996345894     pending
+
+("court order", 1)
+
+2.130214583478951       workplaces of
+0.127500(unknown) at 1:25 ...aying //The system prompt about how much time was left on this 												instance screwed up the output
+0.11982009727868811     you obeying
+0.03295868095391877     words the
+0.03058255624036555     usa and
+0.029241030394552794    was no
+0.019997776802545737    visitations the
+0.018755361650371893    you by
+0.017188882287258886    while i
+0.015249830562742124    was breaching
+0.012143923342750294    you like
+0.011626563732346721    you try
+0.007691452616363744    zach takes
+0.004087304058662942    vacation of
+0.002136747119038264    wishes adam
+0.0019496935543363617   wrong in
+0.0016742191373026322   wants to
+0.001299038105829183    way that
+0.0012192897323227442   was the
+8.622361042989973E-4    using them
+
+
+2.
+
+
+Unfortunately, I ran into a great deal of trouble connecting to the freaking ec2 servers. To make matters worse, the server ended up shutting down right before count-order and in my opinion completed for the first times, due to  auto-shutdown. I had to run those jobs twice on the 5cluster. I had copy failures, and all kinds of problems. I did start late, (Saturday) because I was sick last week and got behind on all of my classes due to sleeping. 
+
+Regardless, I was unable to run the same jobs on all 9 clusters.
+
+On 5 Large:
+
+Job1 had 316 mappers, 32 reducers. Job2 had 32 mappers, 1 reducer
+
+"jurisprudence"  Job1: 21mins, 12sec Job2: 48s, 
+
+"court order"  Job1: about 41min. 40s Job2: 7min. 
+
+"in my opinion"  Job1: 62min. 44sec Job2:
+
+
+3. 
+5Large: The median processing rate (which was court order's) was 17.83GB/49min. or 0.0060635 GB/sec
+
+
+4.
+
+5.
+For large 5, the effective cost was about ((input size * 3 jobs)/total cost). total time was about 2 hours, so 2.62GB/dollar
+6. 
+
+about 8hours of 5 large. (my code was fine, no errors, but I had connection issues) So 8*5*$0.68= $32.64
+7.
+
+Yes. The combiner sums up minimum distances modified by f, and outputs that sum and the cardinality of the subset it received.
