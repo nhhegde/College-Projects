@@ -1,5 +1,5 @@
 Author: Neil Hegde (c) 2012,
-unless otherwise noted.
+unless otherwise noted. Some files provided by course. 
 
 # Visualizing FEC Data
 
@@ -18,10 +18,10 @@ If you're in a VM or Ubuntu, you'll need to run a command that will install exte
     $ ./install_vm_requirements.sh
 
 
-To get started, you'll need to bootstrap the database . Continue reading through the `README` as you wait for this to download (it takes a bit of time).
+To get started, you'll need to bootstrap the database.
 
-	$ cd $BASE_DIR/bootstrap
-	$ ./import-fec.sh
+    $ cd $BASE_DIR/bootstrap
+    $ ./import-fec.sh
 
 This will populate a database that is configured with credentials accessible by the Flask web service.
 
@@ -29,8 +29,8 @@ There are a few python packages needed before we can begin.
 
 You can install the requirements with [`pip`](https://pip.pypa.io/en/latest/):
 
-	$ cd $BASE_DIR
-	$ pip install -r requirements.txt  # may need to be sudo if not in a virtualenv
+    $ cd $BASE_DIR
+    $ pip install -r requirements.txt  # may need to be sudo if not in a virtualenv
 
 Then you should be ready to go! To run the web server, run`./serve.py` in a shell which will deploy the application on localhost port 5000.
 
